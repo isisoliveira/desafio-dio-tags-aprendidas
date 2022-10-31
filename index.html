@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Introdução ao HTML</h1>
+    <hr>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#inspetor">Inspetor de elementos</a></li>
+        <li><a href="#sobre">Sobre o HTML</a></li>
+        <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Tags e Atributos</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+    <hr>
+    <h2 id="inspetor">Inspetor de elementos</h2>
+    <p>Com o recurso <strong>Inspecionar Elementos</strong> você pode visualizar o funcionamento de um site, ele faz parte das Ferramentas para o Desenvolvedor (Dev Tools) e nele é possível acessar vários recursos, como ver o código-fonte de uma página, alterar o HTML e CSS da página para testes<sup style="color: red;">1*</sup>,  acessar um console (também para testes), rede, memória, etc.  </p>
+    <p>Algumas formas de acessar o Inspecionar Elementos são: 
+        <ul>
+            <li>Clicando com o <strong>botão direito do mouse</strong> e selecionando <strong>“Inspecionar”</strong> ou <strong>“Inspecionar Elemento”</strong></li>
+            <li>Pela <strong>barra de ferramentas</strong> do navegador.</li>
+            <li>Por atalhos do teclado, <strong>Ctrl + Shift + C</strong> para o Windows, por exemplo.</li>
+        </ul>
+        <br>
+    </p>
+    <blockquote><mark><strong style="color: red;">1* </strong>A alteração do HTML e CSS serve para fazer testes, e são apenas momentâneas, apenas enquanto você está na página ou enquanto a página não é atualizada manualmente e apenas fica visível na sua máquina, não há alterações de fato na página original.</mark></blockquote>
+    
+    <a href="#inicio"><small>>Voltar ao topo</small></a>
+
+    <h2 id="sobre">Sobre o HTML</h2>
+    <p>A Linguagem de Marcação de  hipertexto, ou seja, HTML, é a linguagem padrão para criar páginas da Web.</p>
+    <p>Ela descreve a estrutura de uma página e possui uma série de elementos, os elementos HTML por sua vez informam ao navegador como deve ser exibido o conteúdo da página.</p>
+    <a href="#inicio"><small>>Voltar ao topo</small></a>
+
+    <h2 id="estrutura">Estrutura básica do HTML</h2>
+    <p>Todos os documentos HTML devem começar com uma declaração de tipo de documento:</p>
+    <img src="imagens\doctype.png" alt="imagem código doctype" width="180">
+    <p>A declaração <code><strong><</strong>!DOCTYPE</strong><strong>></strong></code> representa o tipo de documento e ajuda os navegadores a exibirem as páginas da Web corretamente.</p>
+    <p>O próprio documento HTML começa com <code><strong><</strong>html<strong>></strong></code> e termina com <code><strong><</strong>/html<strong>></strong></code>.</p>
+    <p><i>Exemplo de um documento HTML:</i></p>
+    <img src="imagens\exemplo-codigo.png" alt="exemplo de codigo html" width="350">
+    <p>Onde:
+        <ul>
+            <li><code><strong>!DOCTYPE html</strong></code>: define que este documento é um documento HTML5</li>
+            <li><code><strong>html</strong></code>: é o elemento raiz de uma página HTML </li>
+            <li><code><strong>head</strong></code>: contém metainformações sobre a página HTML e onde fica o Título da página que é mostrada na barra de título do navegador</li>
+            <li><code><strong>title</strong></code>: especifica um título para a página HTML</li>
+            <li><code><strong>body</strong></code>: define o corpo do documento, onde fica todo o conteúdo visível, como títulos, parágrafos, imagens, links, tabelas, listas, etc.,</li>
+            <li><code><strong>h1</strong></code>: define um título grande</li>
+            <li><code><strong>p</strong></code>: define um parágrafo</li>
+        </ul>
+        Falaremos mais sobre as tags abaixo. 
+    </p>
+    <a href="#inicio"><small>>Voltar ao topo</small></a>
+
+    <h2 id="tags">Tags e Atributos</h2>
+    <h3>Tags</h3>
+    <p>As tags são escritas dentro de um sinal de maior e um sinal de menor <strong>< ></strong>. Algumas tags precisam de uma <strong>tag de abertura</strong> e uma <strong>tag de fechamento</strong>, a tag de fechamento difere da tag de abertura pelo sinal de <strong>/</strong>, como no exemplo a seguir:</p>
+    <img src="imagens\ola-mundo-h1.png" alt="exemplo de tag" width="180">
+    <p>Há também as tags que não precisam de uma tag de fechamento, como é o caso da tag <strong><</strong>br<strong>></strong>, nesse caso não é necessário adicionar uma tag de fechamento. Essas tags são chamadas de <strong>elementos vazios</strong>.
+    Exemplo: </p>
+    <img src="imagens\tag-vazia.png" alt="exemplo de tag vazia" width="350">
+    <h3>Atributos</h3>
+    <p>Atributos são informações adicionais que ficam especificadas dentro da tag inicial, são geralmente compostos por nome e valor: <code>name=”value”</code>.</p>
+    <p>Por exemplo: <strong>href</strong> é um atributo que informa a URL da página na qual um link deve seguir:</p>
+    <img src="imagens\exemplo-atributo.png" alt="exemplo de atributo" width="400">
+    
+    <h3><strong>Algumas Tags e suas definições:</strong></h3>
+    <p><Strong>Titulos:</Strong><br></p>
+    <p>Os Titulos HTML são definidos com as tags <strong><</strong>h1<strong>></strong> até a tag <strong><</strong>h6<strong>></strong>, sendo <strong><</strong>h1<strong>></strong> o titulo mais importante e o <strong><</strong>h6<strong>></strong> o menos importante.</p>
+    <img src="imagens\titulos-hs.png" alt="titulos" width="300" >
+
+    <p><strong>Parágrafos</strong></p>
+    <p>Os parágrafos são definidos com a tag <strong><</strong>p<strong>></strong></p>
+    <img src="imagens\exemplo-paragrafo.png" alt="exemplo de paragrafo" width="300">
+
+    <p><strong>Links</strong></p>
+    <p>Os links são definidos com a tag <strong><</strong>a<strong>></strong></p>
+    <img src="imagens\tag-link.png" alt="exemplo de tag link" width="520">
+    <p>O destino do link é especificado no atributo <strong><u>href</u></strong>. </p>
+
+    <p><strong>Imagens</strong></p>
+    <p>As imagens são definidas com a tag <strong><</strong>img<strong>></strong></p>
+    <img src="imagens\exemplo-img.png" alt="exemplo de tag de imagem" width="500">
+    <p><strong><u>src</u></strong> é o atributo de origem da imagem, <strong><u>width</u></strong> e <strong><u>height</u></strong> são os atributos de largura e altura.</p>
+    <a href="#inicio"><small>>Voltar ao topo</small></a>
+
+    <h2 id="listas">Listas</h2>
+    <p>As listas podem ser usadas para listar itens ou até mesmo na criação de um menu, existem dois tipos de listas em HTML, a lista ordenada <strong><</strong>ol<strong>></strong><strong><</strong>/ol<strong>></strong> e a lista não ordenada <strong><</strong>ul<strong>></strong> <strong><</strong>/ul<strong>></strong>. A diferença entre os dois tipos de listas é que, na lista ordenada, os itens são dispostos em uma lista numérica, e na lista não ordenada, os itens da lista são dispostos com um círculo preto/marcadores antes de cada item. </p>
+    <p>Entre as tags de listas é necessário usar a tag <strong><</strong>li<strong>></strong> <strong><</strong>/li<strong>></strong> para cada item que for adicionado, veja os exemplos a seguir:</p>
+    <img src="imagens\lista-nao-ordenada.png" alt="lista não ordenada" width="200">
+    <br>
+    <img src="imagens\lista-ordenada.png" alt="lista ordenada" width="200">
+    <p><strong>Pode haver também uma lista dentro de uma lista, misturando ou não os dois tipos de listas:</strong></p>
+    <img src="imagens\lista-aninhada.png" alt="lista dentro da lista" width="200">
+    <p>Existem muitas outras Tags, e não caberiam nessa única páginas todas elas, por isso indico a quem estiver visualizando isso que acessem os links que irei postar nas Referências para ver todas elas e mais detalhes sobre HTML.</p>
+    <a href="#inicio"><small>>Voltar ao topo</small></a>
+
+    <h2 id="referencias">Referências</h2>
+    <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a><br><br>
+    <a href="https://www.dio.me/" target="_blank">DIO.me</a><br><br>
+    <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">Playlist Youtube - HTML</a><br><br>
+    <a href="#inicio"><small>>Voltar ao topo</small></a><br><br>
+    <hr><hr>
+</body>
+</html>
